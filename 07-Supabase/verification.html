@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm you email</title>
+    <style>
+      body {
+        background-color: #222;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        color: #3ecf8e;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: #b486c3;
+        font-weight: bold;
+      }
+      .highlight {
+        color: #3ecf8e;
+      }
+      p {
+        text-align: center;
+        line-height: 1.3;
+        font-size: 14pt;
+        color: #ccc;
+      }
+      p b {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Next Supabase App</h1>
+        <h2>Confirm your sign-up</h2>
+      </header>
+
+      <p>
+        Welcome to <span class="highlight">Next Supabase App</span>!
+        <br />
+        We are glad that you decided to join us!
+        <br />
+        <b>
+          Please follow
+          <a
+            href="http://localhost:3000/auth/confirm?token_hash={{ .TokenHash }}&type=signup"
+            >this</a
+          >
+          link to verify your email.
+        </b>
+        <br />
+        Not you? Simply ignore this email.
+      </p>
+    </div>
+  </body>
+</html>
